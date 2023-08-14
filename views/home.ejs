@@ -1,0 +1,42 @@
+<%- include('partials/header.ejs') %>
+
+<div class="home">
+
+   <h1>Home</h1>
+<h2> welcome to my Dairy website<br></h2>
+
+<% if(locals.content2){  %>
+
+    <% content2.forEach((dat)=>{%>
+
+         <h1><%=dat.title  %></h1>
+    <p><%= dat.post.slice(0,100)+"..." %>
+        
+      
+
+
+<a href= "post/<%=dat.title %>">Read more...</a>
+        </p>
+  <%  }) %>
+
+
+     <% } %>  
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,33 @@
+<%- include('partials/header.ejs') %>
+
+
+<div class="home">
+
+
+
+
+    <h1>Compose</h1>
+
+    <form action="/compose" method="post">
+
+        <div class="form-group">
+
+
+
+            <label >Title</label>
+            <textarea class="form-control" id="floatingTextarea" name="composetitle"></textarea>
+
+            <label >Post</label>
+            <textarea class="form-control" id="floatingTextarea2" style="height: 100px" name="composepost"></textarea>
+        </div>
+        <input type="submit" class=" btn btn-primary " value="Publish"></button>
+
+
+
+
+
+    </form>
+</div>
+
+
+    <%- include('partials/footer.ejs') %>
